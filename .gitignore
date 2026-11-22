@@ -1,0 +1,17 @@
+# Mots de passe et réglages privés : ne jamais envoyer sur GitHub
+.env
+**/.env
+
+# Dépendances (elles se réinstallent avec composer install)
+**/vendor/
+**/node_modules/
+
+# Fichiers générés
+**/storage/logs/*.log
+**/database/database.sqlite
+
+# Éditeur et système
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
