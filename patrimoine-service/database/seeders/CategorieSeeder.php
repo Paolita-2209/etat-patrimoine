@@ -9,11 +9,8 @@ class CategorieSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('categories')->insert([
-            ['nom' => 'Bâtiment'],
-            ['nom' => 'Terrain'],
-            ['nom' => 'Véhicule'],
-            ['nom' => 'Équipement'],
-        ]);
+        foreach (['Bâtiment', 'Terrain', 'Véhicule', 'Équipement'] as $nom) {
+            DB::table('categories')->updateOrInsert(['nom' => $nom], ['nom' => $nom]);
+        }
     }
 }
