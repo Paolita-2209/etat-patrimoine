@@ -93,3 +93,22 @@ cd ..
 
 ### Gestion des comptes
 ![Comptes](captures/comptes.png)
+
+## Maquettes Figma
+
+Lien vers les maquettes : [Voir sur Figma](https://www.figma.com/design/ciavYqR2NmYr2cCfOP7ekC/Brief-Patrimoine-etat?node-id=115-2&t=RuTUYxbQrWsBKLTm-1)
+
+### Connexion
+![Maquette connexion](maquettes/maquette-connexion.png)
+
+### Tableau de bord
+![Maquette tableau de bord](maquettes/maquette-tableau-de-bord.png)
+
+### Liste des biens
+![Maquette liste des biens](maquettes/maquette-liste-biens.png)
+
+### Ajout d'un bien
+![Maquette ajout d'un bien](maquettes/maquette-ajout-bien.png)
+
+### Gestion des comptes
+![Maquette comptes](maquettes/maquette-comptes.png)
