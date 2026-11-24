@@ -46,22 +46,50 @@ docker compose up -d
 ```
 Cela crée les bases `base_auth` et `base_patrimoine` (port 5433).
 
-### 3. Configurer et lancer chaque service
-Pour chacun des dossiers `auth-service`, `patrimoine-service` et `interface-web` :
+### 3. Configurer chaque service
+
+**auth-service** (connexion et comptes) :
 ```bash
 cd auth-service
 composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
+php artisan db:seed
+cd ..
 ```
-(Pour `patrimoine-service`, lance aussi `php artisan db:seed` pour créer les catégories.)
+La commande `db:seed` crée les 3 comptes de test (voir plus bas).
 
-### 4. Démarrer les 3 services (3 terminaux)
+**patrimoine-service** (biens et catégories) :
 ```bash
-php artisan serve --port=8000   # dans auth-service
-php artisan serve --port=8001   # dans patrimoine-service
-php artisan serve --port=8002   # dans interface-web
+cd patrimoine-service
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+cd ..
 ```
 
-L'application est accessible sur http://127.0.0.1:8002
+**interface-web** (pages) :
+```bash
+cd interface-web
+composer install
+cp .env.example .env
+php artisan key:generate
+cd ..
+```
+
+## Captures d'écran
+
+### Connexion
+![Connexion](captures/connexion.png)
+
+### Tableau de bord
+![Tableau de bord](captures/tableau-de-bord.png)
+
+### Liste des biens
+![Liste des biens](captures/biens.png)
+
+### Gestion des comptes
+![Comptes](captures/comptes.png)
