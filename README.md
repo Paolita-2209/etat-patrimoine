@@ -112,3 +112,13 @@ Lien vers les maquettes : [Voir sur Figma](https://www.figma.com/design/ciavYqR2
 
 ### Gestion des comptes
 ![Maquette comptes](maquettes/maquette-comptes.png)
+
+## Application en ligne
+
+- **Application** : https://interface-web-64pz.onrender.com
+- **API d'authentification** : https://auth-service-ojen.onrender.com
+- **API du patrimoine** : https://patrimoine-service-8cwh.onrender.com
+
+Hébergement : Render (offre gratuite), avec une base PostgreSQL et un service par application.
+
+> **Important :** sur l'offre gratuite, les services se mettent en veille après 15 minutes sans visite. Le premier accès peut prendre jusqu'à une minute. Si la connexion échoue ou si un message d'erreur apparaît, attendez 30 secondes puis réessayez.
